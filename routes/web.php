@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Joueur;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $joueurs= Joueur::all();
+    return view('home',compact('joueurs'));
 });
 
 Route::get('/admin', function () {

@@ -14,7 +14,7 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('roles')->insert([
             ["nom"=>"attaquant"],
             ["nom"=>"défense"],
             ["nom"=>"central"],

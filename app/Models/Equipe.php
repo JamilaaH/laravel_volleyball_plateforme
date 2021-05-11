@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Equipe extends Model
 {
     use HasFactory;
+
+    public function continent()
+    {
+        return $this->belongsTo(Equipe::class);
+    }
 }

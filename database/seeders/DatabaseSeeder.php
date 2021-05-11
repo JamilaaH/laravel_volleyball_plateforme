@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
             EquipeSeeder::class,
             GenreSeeder::class,
             RoleSeeder::class,
+            PhotoSeeder::class,
+            JoueurSeeder::class,
         ]);
     }
 }
