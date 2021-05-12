@@ -11,6 +11,11 @@ class Equipe extends Model
 
     public function continent()
     {
-        return $this->belongsTo(Equipe::class);
+        return $this->belongsTo(Continent::class);
+    }
+
+    public function joueurs()
+    {
+        return $this->hasMany(Joueur::class);
     }
 }

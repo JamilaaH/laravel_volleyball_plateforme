@@ -9,8 +9,8 @@ class Continent extends Model
 {
     use HasFactory;
 
-    public function equipe()
+    public function equipes()
     {
-        return $this->hasOne(Equipe::class);
+        return $this->hasMany(Equipe::class);
     }
 }

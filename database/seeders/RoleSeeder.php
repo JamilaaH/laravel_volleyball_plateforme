@@ -15,10 +15,22 @@ class RoleSeeder extends Seeder
     public function run()
     {
         DB::table('roles')->insert([
-            ["nom"=>"attaquant"],
-            ["nom"=>"défense"],
-            ["nom"=>"central"],
-            ["nom"=>"remplacement"],
+            [
+                "nom"=>"attaquant",
+                "max"=>2
+            ],
+            [
+                "nom"=>"défense",  
+                "max"=>2
+            ],
+            [
+                "nom"=>"central",
+                "max"=>2
+            ],
+            [
+                "nom"=>"remplacement",
+                "max"=>2
+            ],
             ]);
     }
 }

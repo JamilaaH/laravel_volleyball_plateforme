@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\EquipeController;
+use App\Models\Equipe;
 use App\Models\Joueur;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $joueurs= Joueur::all();
     return view('home',compact('joueurs'));
-});
+})->name('home');
 
 Route::get('/admin', function () {
-    return view('backoffice.main');
+    $equipes= Equipe::all();
+    return view('backoffice.main',compact('equipes'));
 })->name('admin');
+
+Route::resource('/admin/equipe', EquipeController::class);

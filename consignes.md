@@ -4,7 +4,7 @@
 Pour une compétition de volleyball, il faut réaliser un site internet (plate-forme), la seule chose qu'on sait c'est que le client veut pouvoir créer des équipes et les modifier
 
 ## 1) Détails techniques
-**Chaque équipes à : **
+**Chaque équipe à : **
 
 nom de club, une ville qu'elle représente , un pays et un maximum de joueur possible dans leur équipe et par role (ne pas dépasser max 6 joueurs)*, continent_id (pour déterminer dans quel contient l'équipe joue) 
 
@@ -36,19 +36,20 @@ Nom, Prénom, Nom d'équipe + button pour voir le show du joueur
 
 **pages home (àfaire à la fin)** 
 La page home avec : 
-une section ( équipes remplies )
-une section ( 2 équipes non remplies )
-une section ( 4 joueurs sans équipes au hasard )
-une section ( 4 joueurs avec équipe )
-une section ( les equipes d'europes )
-une section ( les équipes hors europes )
-Une section 5 **joueuses** au hasard qui ont une équipe !
-Une section 5 **joueurs** homme et qui ont une équipe !
+
+> * une section ( équipes remplies )
+> * une section ( 2 équipes non remplies )
+> * une section ( 4 joueurs sans équipes au hasard )
+> * une section ( 4 joueurs avec équipe )
+> * une section ( les equipes d'europes )
+> * une section ( les équipes hors europes )
+> * Une section 5 **joueuses** au hasard qui ont une équipe !
+> * Une section 5 **joueurs** homme et qui ont une équipe !
 
 ___
 
 ## DB informations
-**à utiliser -> ralation one to many + one to one**
+**à utiliser -> relation one to many + one to one**
 -Une table joueur
 -Une table genre
 -Une table photo
